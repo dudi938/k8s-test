@@ -4,10 +4,10 @@ function getValue(){
 
 
 function runHttpRequest(){
-    var serviceUrl = "http://incerment.my-ns.svc.cluster.local"
+    var serviceUrl = "http://localhost:31000/getValue"
 
     $.get(serviceUrl, function(data, status){
         var tb =  $('#results-tb')
         $('#results-tb').val(data)
-      });
+    });
 }
